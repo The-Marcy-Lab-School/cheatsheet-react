@@ -108,6 +108,10 @@ export const App = () => {
 }
 ```
 
+When the child component changes the `count` state, the `App` component that "owns" that state will re-render.
+
+When the parent component `App` re-renders, so do all of the children (`CounterDisplay` and `CounterButtons`)
+
 ## Controlled Form
 
 A **controlled form** is a form element whose input values are controlled by React state rather than through DOM manipulation. 
